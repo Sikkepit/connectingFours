@@ -1,0 +1,67 @@
+@font-face {
+ font-family: 'Agbalumo';
+ src: url('Agbalumo.ttf')
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+  text-align: center;
+  font-family: 'Agbalumo';
+  color:#3c2840;
+  background-color: #fde74c;
+}
+#container{
+  max-width: 700px;
+  margin:auto;
+}
+table{
+  margin: auto;
+  border-spacing: 7px;
+}
+h1{
+  font-size:3.5em;
+  margin:0px;
+}
+
+tr{
+  width:100%;
+}
+td{
+  min-width:60px;
+  height:60px;
+  background-color: #5bc0eb;
+  border-radius: 50%;
+  border: 3px solid #3c2840;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+#dog{
+  margin-top:20px;
+}
+#dog img{
+  max-width: 320px;
+}
+#message{
+  min-height: 42px;
+}
+#notification {
+content:"";
+animation: blinker 1.2s linear infinite;
+color: #c3423f;
+display:inline-block;
+font-family: monospace;
+font-size: large;
+margin-top:4px;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
