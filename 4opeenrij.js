@@ -114,7 +114,7 @@ function announceWinner()
   {
     nextPlayer();
     var notification = document.getElementById("notification")
-    notification.textContent = "🎉 Congratulations Player "+turn+"! Click here to play again! 🎉"
+    notification.textContent = "🎉 Congratulations Player "+turn+", you've won! Click here to play again! 🎉"
     cells = document.querySelectorAll('td')
     for (var i = 0; i < cells.length; i++) {
       cells[i].removeAttribute("onclick");
