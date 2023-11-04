@@ -3,14 +3,6 @@
  src: url('Agbalumo.ttf')
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
 body{
   text-align: center;
   font-family: 'Agbalumo';
@@ -28,6 +20,10 @@ table{
 h1{
   font-size:3.5em;
   margin:0px;
+  text-shadow: -1px 1px 2px white,
+				  1px 1px 2px white,
+				  1px -1px 0 white,
+				  -1px -1px 0 white;
 }
 
 tr{
