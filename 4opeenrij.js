@@ -93,16 +93,22 @@ function checkIfWinner(){
 // DIAGONAL WINNER TOP TO BOTTOM
   while(y>2){
     while(x<4){
-      if (board[x][y]===board[x+1][y-1] && board[x][y]===board[+2][y-2] && board[x][y]===board[x+3][y-3] && board[x][y]>0){
-        announceWinner();
+      if (board[x][y]>0){
+      if (board[x][y]===board[x+1][y-1]){
+        if (board[x][y]===board[x+2][y-2]){
+            if (board[x][y]===board[x+3][y-3]){
+              announceWinner();
+          }
+        }
       }
+    }
+        // announceWinner();
+
       x++;
     }
     x=0;
     y--;
   }
-  resetCoordinates();
-
 }
 function announceWinner()
   {
